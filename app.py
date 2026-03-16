@@ -4,7 +4,7 @@ import requests
 st.title("Anlık Hava Durumu")
 
 sehir = st.text_input("Şehir adı girin")
-api_key = "b26752b4cf01b9bb88f59ec5b3a91c2b "
+api_key = "b26752b4cf01b9bb88f59ec5b3a91c2b"
 
 if st.button("Sorgula") and sehir:
     url = f"http://api.openweathermap.org/data/2.5/weather?q={sehir}&appid={api_key}&units=metric&lang=tr"
